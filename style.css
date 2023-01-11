@@ -86,7 +86,7 @@ body{
 }
 
 .btn{
-    padding: 1.1rem 5.1rem;
+    padding: 1.1rem 5rem;
     font-size:1.1rem;
     font-weight: bold;
     color: var(--white);
@@ -129,6 +129,6 @@ body{
         font-size: 2.3rem;
     }
     .btn{
-        padding: 1.3rem 6.9rem;   
+        padding: 1.3rem 6rem;   
     }
 }

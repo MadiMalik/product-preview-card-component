@@ -1,0 +1,134 @@
+:root{
+    --primery-color: hsl(158, 36%, 37%);
+    --secondry-color: hsl(30, 38%, 92%); 
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --hover-stats:  hsl(157, 64%, 15%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondry-color);
+}
+
+/* Container */
+
+.card{
+    background-color: var(--white);
+    display: flex;
+    border-radius: 0.8rem;
+    margin:10% auto;
+    max-width: 710px;
+    height: 530px;
+}
+
+/* Left Section */
+
+.image{
+    height: 530px;
+    width: 350px;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+ }
+
+ .mobile-img{
+    display: none;
+ }
+
+
+/* Right Section */
+
+.right-section{
+    padding: 2rem 2.5rem;
+}
+
+.prefume{
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+    text-transform:uppercase;
+    color: var(--dark-grayish-blue);
+}
+
+.header{
+    font-size: 2.5rem;
+    margin-top: 1.4rem;
+    font-family: 'Fraunces', serif;
+}
+
+.description{
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+    margin: 1rem 0;  
+}
+
+.price-container{
+    display: flex;
+    align-items: center;
+    margin: 1.3rem 0;
+}
+
+.dis-price{
+    color: var(--primery-color);
+    font-size: 2.5rem;
+    font-family:'Fraunces', serif;
+    margin-right:  1.5rem;
+}
+
+.main-price{
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    font-size: 1.1rem;   
+}
+
+.btn{
+    padding: 1.1rem 5.1rem;
+    font-size:1.1rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--primery-color);
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:var(--hover-stats);
+}
+
+
+/* Media query */
+
+@media(max-width: 800px ){
+    .card{
+        max-width: 410px;
+        height: 765px;
+        display: block;
+        text-align: left;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .mobile-img{
+        display: block;
+        width: 410px;
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+    }
+    .right-section{
+        padding: 2rem;
+    }
+
+    .header{
+        font-size: 2.3rem;
+    }
+    .btn{
+        padding: 1.3rem 6.9rem;   
+    }
+}
